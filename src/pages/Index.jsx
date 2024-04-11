@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Flex, Heading, Spacer, Button, Container } from "@chakra-ui/react";
+import { Box, Flex, Heading, Spacer, Container } from "@chakra-ui/react";
+import LoginButton from "../components/LoginButton";
 
 const Index = () => {
   return (
@@ -12,7 +13,7 @@ const Index = () => {
               My App
             </Heading>
             <Spacer />
-            <Button colorScheme="blue">Login</Button>
+            <LoginButton />
           </Flex>
         </Container>
       </Box>
