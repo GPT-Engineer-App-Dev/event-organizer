@@ -3,14 +3,14 @@ import { Button, useDisclosure } from "@chakra-ui/react";
 import LoginModal from "./LoginModal";
 
 const LoginButton = () => {
-  const { onOpen } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
       <Button onClick={onOpen} colorScheme="blue">
         Login
       </Button>
-      <LoginModal />
+      <LoginModal isOpen={isOpen} onClose={onClose} />
     </>
   );
 };
