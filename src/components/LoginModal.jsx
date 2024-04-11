@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, useDisclosure, FormControl, FormLabel, Input, Button, Text, Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, FormControl, FormLabel, Input, Button, Text, Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 
-const LoginModal = () => {
-  const { isOpen, onClose } = useDisclosure();
+const LoginModal = ({ isOpen, onClose }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
